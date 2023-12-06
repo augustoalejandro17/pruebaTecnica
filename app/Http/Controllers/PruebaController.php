@@ -59,7 +59,7 @@ class PruebaController extends Controller
         if(!$user || !$password) {
             throw new \Exception("Ingresar las credenciales", 202);
         }
-        if(!($user == self::USER && $password = self::PASSWORD)) {
+        if(!($user == self::USER && $password == self::PASSWORD)) {
             throw new \Exception("Las credenciales son incorrectas", 202);
         }
     }
